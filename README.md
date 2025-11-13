@@ -89,3 +89,10 @@ If test cases fail, proceed to healing.
     > add-product-to-cart.spec.ts failed. Please investigate and fix it
 
 The Healer agent will fix all failures. All test cases should pass after healing.
+
+
+## To run test case in terminal
+npx playwright test tests/add-product-to-cart.spec.ts --headed
+
+## To view report from terminal
+  npx playwright show-report
