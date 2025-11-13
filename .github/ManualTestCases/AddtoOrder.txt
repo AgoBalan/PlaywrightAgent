@@ -1,0 +1,78 @@
+
+Here are detailed test cases for 1.1 Add Product to Cart:
+
+Test Case 1: Add Single Product to Cart
+Preconditions:
+
+User is on the homepage.
+Cart is empty.
+Steps:
+
+Locate the product "Brocolli - 1 Kg".
+Click the "+" button to set quantity to 1 (if not already).
+Click the "ADD TO CART" button.
+Expected Result:
+
+"Brocolli - 1 Kg" is added to the cart.
+Cart icon updates to show 1 item.
+Cart price updates to ₹120.
+"✔ ADDED" confirmation appears on the product.
+Test Case 2: Add Product with Increased Quantity
+Preconditions:
+
+User is on the homepage.
+Cart is empty.
+Steps:
+
+Locate "Brocolli - 1 Kg".
+Click "+" multiple times to set quantity to 3.
+Click "ADD TO CART".
+Expected Result:
+
+"Brocolli - 1 Kg" is added to the cart with quantity 3.
+Cart icon shows 3 items.
+Cart price updates to ₹360.
+"✔ ADDED" confirmation appears.
+Test Case 3: Add Product with Default Quantity
+Preconditions:
+
+User is on the homepage.
+Cart is empty.
+Steps:
+
+Locate "Brocolli - 1 Kg".
+Click "ADD TO CART" without changing quantity.
+Expected Result:
+
+"Brocolli - 1 Kg" is added to the cart with quantity 1.
+Cart icon shows 1 item.
+Cart price updates to ₹120.
+Test Case 4: Add Product Already in Cart
+Preconditions:
+
+"Brocolli - 1 Kg" is already in the cart with quantity 1.
+Steps:
+
+Locate "Brocolli - 1 Kg".
+Click "+" to increase quantity to 2.
+Click "ADD TO CART" again.
+Expected Result:
+
+Cart updates "Brocolli - 1 Kg" quantity to 2.
+Cart icon shows 2 items.
+Cart price updates to ₹240.
+Test Case 5: Add Product with Zero Quantity (Negative Test)
+Preconditions:
+
+User is on the homepage.
+Cart is empty.
+Steps:
+
+Locate "Brocolli - 1 Kg".
+Click "-" to set quantity to 0.
+Attempt to click "ADD TO CART".
+Expected Result:
+
+Product is not added to cart.
+Error or validation message is shown.
+Cart icon remains at 0 items.
