@@ -12,8 +12,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Ensure Node.js and Playwright are installed
-                sh 'npm ci'
-                sh 'npx playwright install --with-deps'
+                bat 'npm ci'
+                bat 'npx playwright install --with-deps'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
                 // Healing is part of Playwright runtime, so no extra flag is needed
                 // Use debug mode if you want to see healing logs
                 //sh 'npx playwright test --reporter=html'
-                sh 'npx playwright test tests/add-product-to-cart.spec.ts --headed --reporter=html'
+                bat 'npx playwright test tests/add-product-to-cart.spec.ts --headed --reporter=html'
             }
         }
 
