@@ -13,7 +13,7 @@ test.describe('End-to-End Happy Path Scenarios', () => {
     const brocolliCard = page.getByRole('heading', { name: 'Brocolli - 1 Kg' }).locator('..');
     const addToCartBtn = brocolliCard.getByRole('button', { name: 'ADD TO CART' });
     // 2. Click "+" to set quantity to 1 (if not already)
-    const quantityInput = brocolliCard.getByRole('spinbutton');
+    const quantityInput = brocolliCard.getByRole('pinbutton');
     await expect(quantityInput).toHaveValue('1');
     // 3. Click "ADD TO CART".
     await addToCartBtn.click();
