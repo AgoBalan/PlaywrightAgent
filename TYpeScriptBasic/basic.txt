@@ -1,0 +1,64 @@
+//Type Script BAsic
+TS is super set of JS
+TS focus on adding type (date type)annotations and to enhance  quality. relability and maintability
+
+to check npm installed globally: npm ls -g typescript
+locally: npm ls typescript
+to get version : npm tsc -v
+global install: Run the command: npm install -g typescript
+
+📦 Local Installation
+Local installation ties TypeScript to a specific project,
+ which is best practice for team projects to ensure consistent versions.
+
+Navigate to your project folder.
+
+Initialize npm (if you haven’t already):
+npm install --save-dev typescript
+--save-dev keeps TypeScript as a development dependency. in package.json
+
+comparison:
+let name1 = "BAB" -> js idnetify type dynamically
+let name : string = "BAB" ->ts need to metion datatype
+let age: number = 1
+let mis: any = "ffg"  ts-> any picks any value
+
+name1= 1 js-> allows datatype chnage
+name= 1 ts_> throws error, strict type
+
+Run js- > node filapth/file.js
+
+**typescript compile and run ***
+tsc file.ts --> hit enter
+--> it creates equivalent .js file --> now run node file.js
+*****Function*****
+js
+function add(a,b){
+    return a+b;
+}
+add(2,3)
+
+ts
+function add(number a, number b): number{
+    return a+b;
+}
+add(2,3)
+
+
+*****objects***
+.js
+let user = { name: "bab", age: 10}
+user.place = "chennai"
+
+ts
+let user1:{name:string,age:number} = { name: "bab", age: 10}
+user1.place = "chennai" -> ts will give compile time error reason is palce is not in the contract, but generate the .js file,
+cathc is we can run that .js file !!!   
+
+
+
+*******Classses*****
+
+
+
+
